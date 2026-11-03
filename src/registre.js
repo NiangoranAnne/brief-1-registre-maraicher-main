@@ -38,8 +38,19 @@ return operations.find(operation => operation.id===id)
 // obligatoires (n'importe quel texte non vide) · operation présente dans OPERATIONS
 // · coutFCFA nombre positif ou nul.
 export function verifierOperation(saisie, operations) {
-  throw new Error('TODO : coder verifierOperation dans src/registre.js');
-}
+  const erreur = []
+  if (saisie.id === "" || saisie.id === undefined) {
+    erreur.push ("saisie id obligatoire")
+   }
+  if (operations.some(operation => operation.id === saisie.id)){
+    erreur.push ("id existe deja")
+   }
+   return erreur;
+
+   }
+
+//  throw new Error('TODO : coder verifierOperation dans src/registre.js');
+
 
 // Fabrique l'opération à enregistrer à partir d'une saisie VALIDE : coutFCFA devient un nombre.
 export function creerOperation(saisie) {
