@@ -96,6 +96,17 @@ export function verifierOperation(saisie, operations) {
 // Fabrique l'opération à enregistrer à partir d'une saisie VALIDE : coutFCFA devient un nombre.
 export function creerOperation(saisie) {
 
+   const operation = {
+    id: saisie.id,
+    date: saisie.date,
+    parcelle: saisie.parcelle,
+    culture: saisie.culture,
+    operation: saisie.operation,
+    coutFCFA: Number(saisie.coutFCFA)
+  };
+
+  return operation;
+
  // throw new Error('TODO : coder creerOperation dans src/registre.js');
 }
 
