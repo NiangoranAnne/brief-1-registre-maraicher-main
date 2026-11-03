@@ -38,23 +38,65 @@ return operations.find(operation => operation.id===id)
 // obligatoires (n'importe quel texte non vide) · operation présente dans OPERATIONS
 // · coutFCFA nombre positif ou nul.
 export function verifierOperation(saisie, operations) {
-  const erreur = []
-  if (saisie.id === "" || saisie.id === undefined) {
-    erreur.push ("saisie id obligatoire")
-   }
-  if (operations.some(operation => operation.id === saisie.id)){
-    erreur.push ("id existe deja")
-   }
-   return erreur;
+  const erreur = [];
 
-   }
+  if (saisie.id === "" || saisie.id === undefined) {
+    erreur.push("id obligatoire");
+  }
+
+  if (operations.some(operation => operation.id === saisie.id)) {
+    erreur.push("id existe déjà");
+  }
+
+  
+  const date = saisie.date;
+
+  if (date === undefined || date.length !== 10 || date[4] !== "-" || date[7] !== "-") {
+    erreur.push("date invalide (format AAAA-MM-JJ attendu)");
+  } else {
+    const annee = Number(date.slice(0, 4));
+    const mois = Number(date.slice(5, 7));
+    const jour = Number(date.slice(8, 10));
+
+    const d = new Date(annee, mois - 1, jour);
+
+    if (d.getFullYear() !== annee || d.getMonth() !== mois - 1 || d.getDate() !== jour) {
+      erreur.push("date inexistante");
+    }
+  }
+
+  
+  if (saisie.parcelle === undefined || saisie.parcelle.trim() === "") {
+    erreur.push("parcelle obligatoire");
+  }
+
+  
+  if (saisie.culture === undefined || saisie.culture.trim() === "") {
+    erreur.push("culture obligatoire");
+  }
+
+  
+  if (!OPERATIONS.includes(saisie.operation)) {
+    erreur.push("opération non autorisée");
+  }
+
+  const cout = Number(saisie.coutFCFA);
+
+  if (saisie.coutFCFA === undefined || saisie.coutFCFA.trim() === "" || Number.isNaN(cout) || cout < 0) {
+    erreur.push("coût invalide (nombre positif ou nul attendu)");
+  }
+
+  return erreur;
+
+}
 
 //  throw new Error('TODO : coder verifierOperation dans src/registre.js');
 
 
 // Fabrique l'opération à enregistrer à partir d'une saisie VALIDE : coutFCFA devient un nombre.
 export function creerOperation(saisie) {
-  throw new Error('TODO : coder creerOperation dans src/registre.js');
+
+ // throw new Error('TODO : coder creerOperation dans src/registre.js');
 }
 
 // Ajoute la saisie au registre si elle est valide (verifierOperation, puis creerOperation).
