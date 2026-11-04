@@ -3,8 +3,15 @@
 
 // Renvoie la somme des coûts, en FCFA. Liste vide : 0.
 export function totalCouts(operations) {
-  throw new Error('TODO : coder totalCouts dans src/synthese.js');
+let somme= 0 ;
+for(const operation of operations){
+  somme = somme + operation.coutFCFA;
 }
+return somme;
+}
+
+ // throw new Error('TODO : coder totalCouts dans src/synthese.js');
+
 
 // Renvoie un objet : pour chaque parcelle, le nombre d'opérations et le total de leurs coûts.
 // Exemple : { P1: { nombre: 4, total: 15500 }, P2: { nombre: 3, total: 9500 } }
