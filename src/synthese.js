@@ -37,11 +37,11 @@ return bilan ;
 // Exemple : { min: 1500, max: 8000 }
 export function coutMinMax(operations) {
   if ( operations.length=== 0){
-    return null
+    return null;
   
   }
   let min = operations[0].coutFCFA;
-  let max = operations [0].coutFCFA;
+  let max = operations[0].coutFCFA;
   for(const operation of operations){
     if ( operation.coutFCFA < min ){
       min = operation.coutFCFA;
@@ -50,6 +50,6 @@ export function coutMinMax(operations) {
       max = operation.coutFCFA;
     }
   }
-  return {min: 1500 , max : 8000};
+  return {min: min , max : max};
  // throw new Error('TODO : coder coutMinMax dans src/synthese.js');
 }
