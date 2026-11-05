@@ -14,4 +14,4 @@
 | Dépôt cloné et lancé ailleurs ; démonstration répétée |jour 4 |05-11-2026 |Kouassi Anglovia |
 | Bonus | | | |
 
-**Blocages** (le message exact, ce que j'ai essayé, la solution) :j'ai rencontré des beurgues dans l'execution de l' app.js, mais avec des tests repetés , jai pu trouver les erreures au niveau de l'ecriture de certaines synthases, des ponctuations.
+**Blocages** (le message exact, ce que j'ai essayé, la solution) :j'ai rencontré des beurgues dans l'execution de l' app.js, mais avec des tests repetés , jai pu corrige les erreures au niveau de l'ecriture de certaines synthases et des ponctuations.
