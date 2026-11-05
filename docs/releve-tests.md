@@ -15,4 +15,4 @@
 | recherche O03 |P1, tomate,arrosage,2000FCFA |trouvé | Niangoran Anne |
 | registre vide |tableau vide [] |0 |Nangoran Anne |
 
-**Sur un autre poste** (`git clone`, `node app.js`, `npm test`, en suivant le README) : ✏️
+**Sur un autre poste** (`git clone`, `node app.js`, `npm test`, en suivant le README) : Koko Danielle , Kouassi Anglovia
