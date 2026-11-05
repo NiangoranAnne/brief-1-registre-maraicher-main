@@ -16,4 +16,4 @@
 
 
 
-3. **L'entraide** (qui m'a aidé, qui j'ai aidé, sur quoi) : je me suis faite aider  par l'etudiant  Kouassi Anglovia.
+3. **L'entraide** (qui m'a aidé, qui j'ai aidé, sur quoi) : je me suis faite aider  par l'etudiant  Kouassi Anglovia et l' etudiante Marie Carmene; j'ai aidé l' etudiant Guei Armel sur la comprehension des boucles .
