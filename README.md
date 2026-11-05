@@ -34,7 +34,7 @@ Sous PowerShell, si `npm` est bloqué : `npm.cmd test`.
 
 ## Données
 
-✏️ *Le fichier, le nombre d'opérations, les champs (voir [docs/dictionnaire-donnees.md](docs/dictionnaire-donnees.md)), les unités. Rappelez qu'elles sont fictives.*
+donnees-test.json, 10 OPERATIONS du 2026-10-20 au 2026-10-2026, chacune des operations contient six champs(id,date,parcelle,culture,operation et coutFCFA).Les dates et les données sont fictives. (voir [docs/dictionnaire-donnees.md](docs/dictionnaire-donnees.md)), les unités. Rappelez qu'elles sont fictives.*
 
 ## Limites
 
