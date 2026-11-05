@@ -4,7 +4,7 @@
 
 ## Contexte
 
-✏️ *En cinq à huit phrases : qui utilise l'outil (son métier, son geste professionnel), son besoin, ce qu'il saisit, ce que le programme lui affiche, ce que l'outil ne fait pas.*
+La responsable d'une exploitation maraichère pédagogique note ses operations( semis, arrosage , desherbage...) dans un carnet , elle veut les saisir dans un terminal afin de  retrouver  une intervention et totaliser les depenses par  parcelle. Etant Agritech junior je quis amené à lui concevoir un registre JavaScript avec node.js.
 
 ## Prérequis et lancement
 
@@ -23,12 +23,12 @@ Sous PowerShell, si `npm` est bloqué : `npm.cmd test`.
 
 ✏️ *Cochez seulement ce qui marche : `- [x]`.*
 
-- [ ] Données lues et enregistrées dans `donnees/operations.json`
-- [ ] Ajouter une opération, saisies invalides refusées sans arrêter le programme
-- [ ] Lister les opérations, message si le registre est vide
-- [ ] Rechercher par identifiant ou par parcelle ; filtrer par culture
-- [ ] Trier par coût ou par date
-- [ ] Synthèse : total, nombre et total par parcelle, coût minimum et maximum
+- [ X] Données lues et enregistrées dans `donnees/operations.json`
+- [X ] Ajouter une opération, saisies invalides refusées sans arrêter le programme
+- [X ] Lister les opérations, message si le registre est vide
+- [ X] Rechercher par identifiant ou par parcelle ; filtrer par culture
+- [ X] Trier par coût ou par date
+- [ X] Synthèse : total, nombre et total par parcelle, coût minimum et maximum
 - [ ] Bonus : supprimer et modifier une opération (choix 6 et 7)
 - [ ] Bonus : tri par coût décroissant, parcelle la plus coûteuse
 
@@ -37,13 +37,11 @@ Sous PowerShell, si `npm` est bloqué : `npm.cmd test`.
 donnees-test.json, 10 OPERATIONS du 2026-10-20 au 2026-10-2026, chacune des operations contient six champs(id,date,parcelle,culture,operation et coutFCFA).Les dates et les données sont fictives. (voir [docs/dictionnaire-donnees.md](docs/dictionnaire-donnees.md)), les unités. Rappelez qu'elles sont fictives.*
 
 ## Limites
-
-✏️ *Au moins trois. Par exemple : le registre enregistre des dépenses, pas les revenus, il ne mesure donc pas la rentabilité.*
+le registre ne note que les depenses(coût),il ne calcule pas les benefices et le rendemant en hectar.
 
 ## Documents
 
 [Dictionnaire des données](docs/dictionnaire-donnees.md) · [Tâches](docs/taches.md) · [Relevé des tests](docs/releve-tests.md) · [Journal de recherche](docs/journal-recherche.md) · [Fiche agronomique](docs/fiche-agronomique.md) · [Fiche individuelle](docs/fiche-individuelle.md)
 
 ## Auteur
-
-✏️ *Prénom NOM, compte GitHub. Entraide : avec qui, sur quoi.*
+Niangoran Okpo Anne Juliette : compte github : NiangoranAnne
